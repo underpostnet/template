@@ -22,6 +22,12 @@
 
       <style>
 
+      body {
+
+        overflow-y: auto;
+        height: 7000px;
+      }
+
       @font-face {
       	font-family: 'gothic';
       	src: URL('/cloud/template/fonts/GOTHIC.ttf') format('truetype');
@@ -54,6 +60,17 @@
 
       }
 
+      .content-purple {
+
+        margin: auto; width: 90%;
+        font-size: 14px;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        background: #8A2387;
+
+      }
+
       /*
 
       morado -> #8A2387
@@ -73,11 +90,107 @@
 
         <br>
 
-        <span style='font-size: 32px; font-weight: bold;'>Ayleen Bertini R.</span>
+        <div style='text-align: center;'><span style='font-size: 32px; font-weight: bold;'>Ayleen Bertini R.</span>
 
         <br>
 
-        <span style='font-size: 28px; font-weight: bold; color: #8A2387;'>Nutricionista</span>
+        <span style='font-size: 28px; font-weight: bold; color: #8A2387;'>Nutricionista</span></div>
+
+        <br><br>
+
+        <div class='in content-purple'>
+
+          <br>
+
+          <br>
+
+          <br>
+
+          <span style='font-size: 18px; font-weight: bold;'>S O B R E  &nbsp; &nbsp; M I</span>
+
+          <hr>
+
+          <br>
+
+          <div class='in' style=' max-width: 300px; font-family: arial; margin: auto; text-align: left;'>
+
+          Mi fortaleza es la disciplina,
+          responsabilidad y el espíritu de
+          superación. Mi virtud es la capacidad de
+          trabajo en equipo y mi aporte personal
+          es permanecer proactiva frente a las
+          necesidades de mi entorno laboral y
+          siempre con una actitud positiva
+
+        </div>
+
+          <br>
+
+          <br>
+
+          <br>
+
+          <br>
+
+          <span style='font-size: 18px; font-weight: bold;'>C O N T A C T O</span>
+
+          <hr>
+
+          <br>
+          AYLEEN.BERTINI@GMAIL.COM
+          <br>
+          +56950059878
+          <br>
+          Francisco de Asís 465,
+          <br>
+          Concón, V región, Chile
+          <br>
+
+          <br>
+          <br>
+          <br>
+
+          <span style='font-size: 18px; font-weight: bold;'>E D U C A C I Ó N</span>
+
+          <hr>
+
+        <div class='in' style=' max-width: 300px; font-family: arial; margin: auto; text-align: left;'>
+
+            <br>
+            <b>UNIVERSIDAD DE VALPARAÍSO</b>
+            <br>
+            <br>
+            Titulación
+            <br>
+            <i>2019</i>
+            <br>
+            Estudiante actual de Doctorado en
+            <br>
+            Ciencias e Ingeniería para la Salud.
+            <br>
+            Titulación
+            <br>
+            <i>2024</i>
+            <br>
+            <br>
+
+            <b>COLEGIO NACIONAL SANTA ANA</b>
+            <br>
+            <br>
+            Graduación enseñanza media
+            <br>
+            <i>2013</i>
+
+
+            <br>
+
+          </div>
+
+          <br>
+
+          <br>
+
+        </div>
 
         <br><br>
 
@@ -454,7 +567,122 @@
         <br>
         <br>
         <br>
+
+        <div class='in content-purple'>
+
+          <br>
+          <br>
+          <br>
+
+          <span style='font-size: 18px; font-weight: bold;'>A P T I T U D E S</span>
+
+          <hr>
+
+          <br>
+
+
+            <div class='in' style=' max-width: 300px; font-family: arial; margin: auto; text-align: left;'>
+
+                <li>Capacidad de tomar decisiones
+                </li><li>Facilidad para trabajar en equipo
+                </li><li> Persistencia y constancia para la
+                obtención de resultados
+                </li><li>Excelente capacidad de liderazgo
+                </li><li>Pensamiento estratégico
+                </li><li>Adaptación a cambios
+                </li><li> Proactividad y eficacia.</li>
+
+          </div>
+
+          <br>
+          <br>
+          <br>
+
+          <span style='font-size: 18px; font-weight: bold;'>I D I O M A</span>
+
+          <hr>
+
+          <br>
+
+
+            <div class='in' style=' max-width: 300px; font-family: arial; margin: auto; text-align: left;'>
+
+                Inglés: Intermedio
+
+          </div>
+
+
+          <br>
+          <br>
+          <br>
+
+          <span style='font-size: 18px; font-weight: bold;'>M A N E J O <br>C O M P U T A C I O N A L</span>
+
+          <hr>
+
+          <br>
+
+
+            <div class='in' style=' max-width: 300px; font-family: arial; margin: auto; text-align: left;'>
+
+
+                Office: Nivel avanzado<br>
+                Python: Nivel intermedio
+
+          </div>
+
+
+          <br>
+
+          <br>
+
+          <span style='font-size: 18px; font-weight: bold;'>R E F E R E N C I A S</span>
+
+          <hr>
+
+          <br>
+
+
+            <div class='in' style=' max-width: 300px; font-family: arial; margin: auto; text-align: left;'>
+
+
+              <b>Nutricionista Rafael Jiménez</b>
+              <br>
+              Académico y director de carrera Nutrición y dietética
+              <br>
+              Universidad de Valparaíso
+              <br>
+              Contacto: rafael.jimenez@uv.cl
+              <br>
+              <br><br>
+              <b>Nutricionista Mario Beroiza</b>
+              <br>
+              Director Gremio de Profesionales
+              <br>
+              Hospital psiquiátrico del Salvador
+              <br>
+              Contacto: +56995280111
+
+              <br>
+                <br>
+                  <br>
+
+          </div>
+
+
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+        </div>
         <br>
+          <br>
+            <br>
 
 
 
