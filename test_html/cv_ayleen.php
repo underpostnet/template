@@ -22,15 +22,10 @@
 
       <style>
 
-      body {
-
-        overflow-y: auto;
-        height: 7000px;
-      }
 
       @font-face {
       	font-family: 'gothic';
-      	src: URL('/cloud/template/fonts/GOTHIC.ttf') format('truetype');
+      	src: URL('/cloud/temp/fonts/GOTHIC.ttf') format('truetype');
       }
 
       a {
