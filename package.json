@@ -1,0 +1,26 @@
+{
+  "name": "template",
+  "description": "template",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/underpostnet/template"
+  },
+  "keywords": [
+    "template",
+    "underpost.net"
+  ],
+  "author": "Francisco Verdugo <fcoverdugoa@underpost.net> (https://underpost.net/)",
+  "license": "MIT",
+  "homepage": "https://underpost.net",
+  "dependencies": {
+    "express": "latest",
+    "nodemon": "latest",
+    "var_dump": "latest"
+  }
+}
