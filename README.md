@@ -1,7 +1,7 @@
-# UNDERpost.net | Apache - Template
+# UNDERpost.net | Template
 
 
-![PathFinding](https://underpost.net/underpost-social.jpg)
+![underpost.net](https://underpost.net/underpost-social.jpg)
 
 
 https://underpost.net
