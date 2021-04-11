@@ -48,7 +48,7 @@
       a {
         color: `+un.param.a_color+`;
       }
-      <style>
+      </style>
       `);
       console.log('init template system lang -> '+['en','es'][un.param.lang]);
       setTimeout(()=>{
