@@ -8,7 +8,10 @@ var client_path = 'C:/dd/deploy_area/client';
 var static_path = '/static';
 var charset = 'utf8';
 var fs = require('fs');
-const var_dump = require('var_dump');
+var var_dump = require('var_dump');
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // LIB
 eval(fs.readFileSync((client_path+'/util.js'), charset));

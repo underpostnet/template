@@ -13,13 +13,7 @@ https://underpost.net
 - install:
 
 
-`npm install nodemon`
-
-
-`npm install express`
-
-
-`npm isntall var_dump`
+`npm install`
 
 
 - dev mode init:

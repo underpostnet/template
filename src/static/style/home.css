@@ -1,0 +1,12 @@
+.api-test-button {
+  background: red;
+  padding: 10px;
+  color: white;
+  transition: .3s;
+  opacity: 0.8;
+  cursor: pointer;
+  font-size: 15px;
+}
+.api-test-button:hover {
+  opacity: 1;
+}

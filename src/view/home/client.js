@@ -6,10 +6,11 @@
       title: 'template - underpost.net',
       background: 'black',
       color: 'white',
-      a_color: 'magenta',
-      font: {name:'retro-font',url:'http://dev.nexodev.org/static/PressStart2P.ttf'},
+      a_color: 'yellow',
+      font: {name:'retro-font',url:'http://dev.nexodev.org/static/font/PressStart2P.ttf'},
       favicon: {url:'https://underpost.net/assets/underpost.png',type:'image/png'},
-      style: 'http://dev.nexodev.org/static/simple.css',
+      style: 'http://dev.nexodev.org/static/style/simple.css',
+      view_style: 'http://dev.nexodev.org/static/style/home.css',
       callback: 1000,
       movil: 500,
       lang: lang()=='en' ? 0 : 1,
@@ -33,6 +34,7 @@
       <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
       <meta name='viewport' content='width=device-width, user-scalable=no' />
       <link href='`+un.param.style+`' rel='stylesheet'>
+      <link href='`+un.param.view_style+`' rel='stylesheet'>
       <style>
       @font-face {
         font-family: '`+un.param.font.name+`';
