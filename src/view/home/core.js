@@ -13,7 +13,7 @@
       view_style: 'http://dev.nexodev.org/static/style/home.css',
       callback: 1000,
       movil: 500,
-      lang: lang()=='en' ? 0 : 1,
+      lang: lang()=='es' ? 1 : 0,
       dir: 'ltr',
       main: [[PARAM]]
     },
