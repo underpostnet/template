@@ -1,6 +1,6 @@
 var view = (url, view)=>{
   let data_view = {
-    client: fs.readFileSync((path+'/view/'+view+'/client.js'), charset),
+    client: fs.readFileSync((path+'/view/'+view+'/core.js'), charset),
     plaform: fs.readFileSync((path+'/view/'+view+'/src/plaform.js'), charset),
     init: fs.readFileSync((path+'/view/'+view+'/src/init.js'), charset),
     param: fs.readFileSync((path+'/view/'+view+'/src/param.js'), charset),
