@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 
 // LIB
 eval(fs.readFileSync((client_path+'/util.js'), charset));
-var vanillajs = fs.readFileSync((client_path+'/util.js'), charset);
-var util = fs.readFileSync((client_path+'/vanilla.js'), charset);
+var vanillajs = fs.readFileSync((client_path+'/vanilla.js'), charset);
+var util = fs.readFileSync((client_path+'/util.js'), charset);
 var ws_client = fs.readFileSync((client_path+'/websocket.js'), charset);
 
 // STATIC
