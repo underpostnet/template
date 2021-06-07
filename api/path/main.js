@@ -23,6 +23,22 @@ for(let i=0; i<l(data.path);i++){
 
 		*/
 
+
+		var mainJs = fs.readFileSync(data.clientPath+'path/'+data.path[i].main_path+'/main.js').toString();
+
+		/*
+
+		[[SERVERJSMODS]]
+		[[SERVERVAR]]
+
+		*/
+
+		mainJs = mainJs.replace('[[SERVERJSMODS]]', (mod_lib+mod_underpost+mod_js));
+		mainJs = mainJs.replace('[[SERVERVAR]]',`
+					un.var.token = '`+req.session.token+`';
+					un.var.lang = `+lang_id+`;
+		`);
+
 		res.write((`
 
 			<!DOCTYPE html>
@@ -75,29 +91,13 @@ for(let i=0; i<l(data.path);i++){
 
 			`+h1+h2+`
 
+			<script type='text/javascript' async defer>`+mainJs+`</script>
+
 			</body>
 
 			</html>
 
 			`));
-
-			/*
-
-			<script type='text/javascript' async defer>
-
-				((()=> {
-
-				`+mod_underpost+`
-
-				`+mod_lib+`
-
-				`+mod_js+`
-
-				})())
-
-			</script>
-
-			*/
 
 			res.end();
 

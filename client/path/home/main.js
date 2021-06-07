@@ -7,14 +7,15 @@
   },
   var: {
     lang: null,
-    dir: null,
     w: null,
     h: null,
     token: null
   },
   init: ()=>{
-    console.log('init template system lang -> '+['en','es'][un.var.lang]);
     [[SERVERVAR]]
+    console.log('init template system lang -> '+['en','es'][un.var.lang]);    
+    console.log('un', un);
+    append('body','<style>h1, h2 {display: none;}</style>');
     un.render.init();
     un.rr();
   },
