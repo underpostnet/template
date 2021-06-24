@@ -26,12 +26,6 @@ for(let i=0; i<l(data.path);i++){
 
 		var mainJs = fs.readFileSync(data.clientPath+'path/'+data.path[i].main_path+'/main.js').toString();
 
-		/*
-
-		[[SERVERJSMODS]]
-		[[SERVERVAR]]
-
-		*/
 
 		mainJs = mainJs.replace('{{UNDERPOST}}', (mod_lib+mod_underpost));
 		mainJs = mainJs.replace('{{COMPONENTS}}', mod_js);
