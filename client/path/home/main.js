@@ -1,70 +1,76 @@
 ((()=>{
-  [[SERVERJSMODS]]
-  var un = {
-  param: {
-    callback: 1000,
-    movil: 500
-  },
-  var: {
-    lang: null,
-    w: null,
-    h: null,
-    token: null
-  },
-  init: ()=>{
-    [[SERVERVAR]]
-    console.log('init template system lang -> '+['en','es'][un.var.lang]);    
-    console.log('un', un);
-    append('body','<style>h1, h2 {display: none;}</style>');
-    un.render.init();
-    un.rr();
-  },
-  render: {
-    init: ()=>{
-      mod_header.init();
+
+  //----------------------------------------------------------------------------
+  // UNDERpost.net LIBRARY
+  //----------------------------------------------------------------------------
+
+  {{UNDERPOST}}
+
+  //----------------------------------------------------------------------------
+  // COMPONENTS
+  //----------------------------------------------------------------------------
+
+  {{COMPONENTS}}
+
+  //----------------------------------------------------------------------------
+  // GLOBAL
+  //----------------------------------------------------------------------------
+
+  const global = {
+    init: async ()=>{
+      header.loader();
     },
-    rc: function(obj){
-
-      /*
-
-      un.render.rc({
-        class: '',
-        w: '',
-        h: '',
-        t: '',
-        l: '',
-        minw: '',
-        maxw: '',
-        minh: '',
-        maxh: '',
-      });
-
-      */
-
-      s(obj.class).style.width = obj.w;
-      s(obj.class).style.height = obj.h;
-      s(obj.class).style.top = obj.t;
-      s(obj.class).style.left =  obj.l;
-      s(obj.class).style.minWidth = obj.minw;
-      s(obj.class).style.maxWidth = obj.maxw;
-      s(obj.class).style.minHeight = obj.minh;
-      s(obj.class).style.maxHeight = obj.maxh;
-
+    render: async ()=>{
+      header.render();
     }
-  },
-  rr: async ()=>{
-    if(un.var.w!=window.innerWidth){
-      un.var.w=window.innerWidth;
-      un.var.h=window.innerHeight;
-      if(un.var.w>un.param.movil){
-        console.log('render -> resize desktop -> '+un.var.w);
-      }else{
-        console.log('render -> resize movil -> '+un.var.w);
+  };
+
+  //----------------------------------------------------------------------------
+  // DATA
+  //----------------------------------------------------------------------------
+
+  let data = {
+    const: {
+      callback: 100,
+      lang: lang()=='en' ? 0 : 1,
+      dir: 'ltr',
+      token: null
+    },
+    var: {
+      w: null,
+      h: null
+    }
+  };
+
+  {{INITDATA}}
+
+  //----------------------------------------------------------------------------
+  // MAIN
+  //----------------------------------------------------------------------------
+
+  const main = {
+    init: async ()=> {
+      s('html').lang = ['en','es'][data.const.lang];
+      s('html').dir = data.const.dir;
+      console.log('init template system lang -> '+['en','es'][data.const.lang]);
+      global.init();
+      main.render();
+    },
+    render: async ()=>{
+      if(data.var.w!=window.innerWidth || data.var.h!=window.innerHeight){
+        data.var.w=window.innerWidth;
+        data.var.h=window.innerHeight;
+        console.log('-> render | w:'+data.var.w+' h:'+data.var.h);
+        global.render();
       }
+      console.log('callback');
+      await timer(data.const.callback);
+      main.render();
     }
-    console.log('callback');
-    await timer(un.param.callback);
-    un.rr();
-  }
-};un.init();
+  };
+
+  main.init();
+
+  //----------------------------------------------------------------------------
+  //----------------------------------------------------------------------------
 })());

@@ -33,10 +33,11 @@ for(let i=0; i<l(data.path);i++){
 
 		*/
 
-		mainJs = mainJs.replace('[[SERVERJSMODS]]', (mod_lib+mod_underpost+mod_js));
-		mainJs = mainJs.replace('[[SERVERVAR]]',`
-					un.var.token = '`+req.session.token+`';
-					un.var.lang = `+lang_id+`;
+		mainJs = mainJs.replace('{{UNDERPOST}}', (mod_lib+mod_underpost));
+		mainJs = mainJs.replace('{{COMPONENTS}}', mod_js);
+		mainJs = mainJs.replace('{{INITDATA}}',`
+					data.const.token = '`+req.session.token+`';
+					data.const.lang = `+lang_id+`;
 		`);
 
 		res.write((`
