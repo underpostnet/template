@@ -2,8 +2,8 @@
   "watch": [
     "./",
     "c:/dd/global_data/json/template/",
-    "c:/dd/deploy_area/client/", 
-    "c:/dd/underpost.net/src/node/lib"
+    "c:/dd/deploy_area/client/",
+    "c:/dd/underpost.net/src/node/src"
   ],
     "ext": "js,css,json"
 }
