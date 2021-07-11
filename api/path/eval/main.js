@@ -1,7 +1,7 @@
 for(let i=0; i<l(data.path);i++){
 	const suburl = data.path[i].url;
   app.get(suburl, function(req, res) {
-		generateToken(req);
+		
 		let infoHead = logHeader(req, res, data, i, true);
 		let lang = infoHead.lang;
 		let lang_id = infoHead.id;
